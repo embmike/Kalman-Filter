@@ -1,5 +1,5 @@
 # Kalman-Filter
-This sample application uses a Kalman filter to predict the train position based on speed measurement.
+This sample application uses a Kalman filter to predicts the train position based on speed measurement.
 
 
 ## Kalman filter algorithm
@@ -34,7 +34,7 @@ A train travels at a constant speed of 80 km/h. The speed is measured every 100 
 + ### Plotted speed and predicted position:
   <img src="/images/train_speed_and_position.PNG" width="100%" height="100%">
   
-+ ### Plotted kalman gain and error covarinace:
++ ### Plotted kalman gain and error covariance:
   <img src="/images/kalman_gain_and error_covariance.PNG" width="100%" height="100%">
 
 
