@@ -1,6 +1,7 @@
 # Kalman-Filter
 This sample application uses a Kalman filter to predict a position based on speed measurement.
 
+
 ## Kalman filter algorithm
 The [Kalman filter](https://en.wikipedia.org/wiki/Kalman_filter) equations are simplified for the application.       
 
@@ -30,3 +31,28 @@ A train travels at a constant speed of 80 km/h. The speed is measured every 100 
 + ### Speed measurement with noise:
   <img src="/images/measurement_calculation.JPG" width="65%" height="65%">
   
++ ### Plotted speed and predicted position:
+  <img src="/images/train_speed_and_position.PNG" width="100%" height="100%">
+  
++ ### Plotted kalman gain and error covarinace:
+  <img src="/images/kalman_gain_and error_covariance.PNG" width="100%" height="100%">
+
+
+## Important files
+- **train_position_prediction.py** : Calculates the train position and plots the results
+- **speed_measurement.py** : Simulates the speed measurement
+- **kalman_filter.py** : Predicts the position.
+
+
+## Installation and usage
+Clone the repository
+```sh
+$ cd <your workspace folder>
+$ git clone https://github.com/embmike/Kalman-Filter.git
+```
+
+You can use the code for example on your computer with [Anaconda](https://www.anaconda.com/) or via cloud computing with [Google Colaboratory](https://colab.research.google.com/)
+
+
+## Licence
+This project is licensed under the terms of the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
