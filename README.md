@@ -1,5 +1,5 @@
 # Kalman-Filter
-This sample application uses a Kalman filter to predict a position based on speed measurement.
+This sample application uses a Kalman filter to predict the train position based on speed measurement.
 
 
 ## Kalman filter algorithm
