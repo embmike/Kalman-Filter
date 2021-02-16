@@ -58,7 +58,7 @@ class Kalman(object):
 
         # K = Pp * H' * S^-1
         self.K = mm([self.Pp, self.H.transpose(), miv(self.S)])
-        self.K_list.append(self.K[1][0])
+        self.K_list.append(self.K)
 
         # y = z - H * xp
         self.y = ms(z, mm([self.H, self.xp]))
@@ -69,6 +69,6 @@ class Kalman(object):
         # P = (I - K * H) * Pp'
         I = mid(self.K.shape[0])
         self.P = mm([ms(I, mm([self.K, self.H])), self.Pp.transpose()])
-        self.P_list.append(self.P[1][1])
+        self.P_list.append(self.P)
 
         return self.x.tolist()

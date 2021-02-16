@@ -14,28 +14,28 @@ The [Kalman filter](https://en.wikipedia.org/wiki/Kalman_filter) equations are s
   P0: the initial error covariance   
 
 + ### Equations:
-  <img src="/images/kalman_filter_equations.JPG" width="60%" height="60%">
+  ![Equations](/images/1_kalman_equations.PNG "Equations") 
 
 + ### Kalman filter calculation:
-  <img src="/images/kalman_filter_calculation.JPG" width="75%" height="75%">
+  ![Kalman filter calculation](/images/2_kalman_filter_calculation.PNG "Kalman filter calculation") 
 
 ## Example
 A train travels at a constant speed of 80 km/h. The speed is measured every 100 ms. The speed is filtered and the current position is predicted using a Kalman filter.
 
 + ### Vectors and matrices:
-  <img src="/images/process_model.JPG" width="13%" height="13%">
+  ![Vectors and matrices](/images/3_vectors_and_matrices.PNG "Vectors and matrices") 
   
 + ### A priori prediction of the position:
-  <img src="/images/process_calculation.JPG" width="45%" height="45%">
+  ![A priori prediction of the position](/images/4_a_priori_prediction.PNG "A priori prediction of the position") 
   
 + ### Speed measurement with noise:
-  <img src="/images/measurement_calculation.JPG" width="65%" height="65%">
+  ![Speed measurement with noise](/images/5_speed_measurement.PNG "Speed measurement with noise") 
   
 + ### Plotted speed and predicted position:
-  <img src="/images/train_speed_and_position.PNG" width="100%" height="100%">
+  ![Plotted speed and predicted position](/images/6_plotted_speed_and_posotion.PNG "Plotted speed and predicted position") 
   
 + ### Plotted kalman gain and error covariance:
-  <img src="/images/kalman_gain_and error_covariance.PNG" width="100%" height="100%">
+  ![Plotted kalman gain and error covariance](/images/7_kalman_gain_and_error_covariance.PNG "Plotted kalman gain and error covariance") 
 
 
 ## Important files

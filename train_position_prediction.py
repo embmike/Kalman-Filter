@@ -51,6 +51,11 @@ if __name__ == '__main__':
         positions.append( X[0][0] )
         speeds.append( X[1][0] )
 
+    # Error covariance for position
+    kalman_P_list = [P[1][1] for P in kalman.P_list]
+
+    # Kalman gain for position
+    kalman_K_list = [K[1][0] for K in kalman.K_list]
 
     # Plot results
     plt.plot(time_peride, measured_speeds, color='gray', linestyle=':')
@@ -67,13 +72,13 @@ if __name__ == '__main__':
     plt.title('Train position estimated by kalman filter')
     plt.show()
 
-    plt.plot(time_peride, kalman.P_list)
+    plt.plot(time_peride, kalman_P_list)
     plt.xlabel('Measurement samples [sample/s]')
     plt.ylabel('Error covariance P [(m/s)^2]')
     plt.title('Error covariance of the kalman filter')
     plt.show()
 
-    plt.plot(time_peride, kalman.K_list)
+    plt.plot(time_peride, kalman_K_list)
     plt.xlabel('Measurement samples [sample/s]')
     plt.ylabel('Kalman gain K')
     plt.title('Kalman gain of the kalman filter')
