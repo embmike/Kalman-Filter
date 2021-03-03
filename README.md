@@ -38,10 +38,10 @@ A train travels at a constant speed of 80 km/h. The speed is measured every 100 
   ![Plotted kalman gain and error covariance](/images/7_kalman_gain_and_error_covariance.PNG "Plotted kalman gain and error covariance") 
 
 
-## Important files
-- **train_position_prediction.py** : Calculates the train position and plots the results
-- **speed_measurement.py** : Simulates the speed measurement
-- **kalman_filter.py** : Predicts the position.
+## Important files of the python_app and cplusplus_app
+- **train_position_prediction.py / train_position_prediction.cpp** : Calculates the train position and plots the results
+- **speed_measurement.py / SpeedMeasurement.h (.cpp)** : Simulates the speed measurement
+- **kalman_filter.py / KalmanFilter.h (.cpp)** : Predicts the position.
 
 
 ## Installation and usage
@@ -50,9 +50,11 @@ Clone the repository
 $ cd <your workspace folder>
 $ git clone https://github.com/embmike/Kalman-Filter.git
 ```
-
+**Python**
 You can use the code for example on your computer with [Anaconda](https://www.anaconda.com/) or via cloud computing with [Google Colaboratory](https://colab.research.google.com/)
 
+**C++**
+Use any C++ IDE such as Visual Studio. This software uses the [Eigen library](https://eigen.tuxfamily.org/index.php?title=Main_Page) to compte linear algebra,
 
 ## Licence
 This project is licensed under the terms of the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
