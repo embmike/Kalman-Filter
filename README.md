@@ -50,11 +50,11 @@ Clone the repository
 $ cd <your workspace folder>
 $ git clone https://github.com/embmike/Kalman-Filter.git
 ```
-**Python**
+**Python**    
 You can use the code for example on your computer with [Anaconda](https://www.anaconda.com/) or via cloud computing with [Google Colaboratory](https://colab.research.google.com/)
 
-**C++**
-Use any C++ IDE such as Visual Studio. This software uses the [Eigen library](https://eigen.tuxfamily.org/index.php?title=Main_Page) to compte linear algebra,
+**C++**    
+Use any C++ IDE such as Visual Studio. This software uses the [Eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page) C++ template library to compute linear algebra.
 
 ## Licence
 This project is licensed under the terms of the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
