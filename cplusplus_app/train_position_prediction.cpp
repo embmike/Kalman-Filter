@@ -57,10 +57,10 @@ int main()
          0, 1;
 
     // Iternal matrices
-    MatrixXf Z(1, 1);
-    MatrixXf y(1, 1);
-    MatrixXf S(1, 1);
-    MatrixXf K(2, 1);
+    MatrixXf Z {1, 1};
+    MatrixXf y {1, 1};
+    MatrixXf S {1, 1};
+    MatrixXf K {2, 1};
 
     // Kalman filter
     KalmanFilter kalman_filter {x, P, F, H, Q, R, I, Z, y, S, K};
