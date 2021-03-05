@@ -7,7 +7,7 @@ KalmanFilter::KalmanFilter( MatrixXf x_, MatrixXf P_,
     : x{x_}, P{P_}, F{F_}, H{H_}, Q{Q_}, R{R_}, I{I_}, Z{Z_}, y{y_}, S{S_}, K{K_}
 {}
 
-TupleStdM3f KalmanFilter::filter(float z)
+TupleStdM3f KalmanFilter::Filter(float z)
 {
     // Measurement
     Z << z;

@@ -38,7 +38,7 @@ public:
                     MatrixXf F_, MatrixXf H_, MatrixXf Q_, MatrixXf R_, MatrixXf I_,
                     MatrixXf Z_, MatrixXf y_, MatrixXf S_, MatrixXf K_);
 
-    TupleStdM3f filter(float z);
+    TupleStdM3f Filter(float z);
 };
 
 

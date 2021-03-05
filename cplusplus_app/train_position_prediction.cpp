@@ -15,11 +15,11 @@ VectorStdf TimeSteps(const float time_begin, const float dt, const float time_pe
 int main()
 {
     // Sampling rate in s
-    const float dt = 0.1f;
+    const float dt {0.1f};
 
     // Periode of time in s
-    const float time_begin = 0.0f;
-    const float time_peride = 10.0f;
+    const float time_begin {0.0f};
+    const float time_peride {10.0f};
 
     // Time steps
     VectorStdf time_steps = TimeSteps(time_begin, dt, time_peride);
@@ -66,16 +66,17 @@ int main()
     KalmanFilter kalman_filter {x, P, F, H, Q, R, I, Z, y, S, K};
 
     //Speed measurement
-    float speed_mean = 80.0f; 
-    float speed_stddev = 8.0f;
+    float speed_mean {80.0f};
+    float speed_stddev {8.0f};
     SpeedMeasurement measurement {speed_mean, speed_stddev};
 
     for(float time_step : time_steps)
     {
         float z = measurement.Measure();
-        tie(x, P, K) = kalman_filter.filter(z);
+        tie(x, P, K) = kalman_filter.Filter(z);
 
         cout << "z_speed = " << z       << endl;
+        cout << "x_speed = " << x(1)    << endl;
         cout << "x_pos   = " << x(0)    << endl;
         cout << "K_pos   = " << K(1, 0) << endl;
         cout << "P_pos   = " << P(1, 1) << endl << endl;
